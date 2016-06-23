@@ -17,4 +17,4 @@ document.addEventListener('resume', function() {
   }
 });
 
-setTimeout(function(){ createNotification("Hola mundo desde la app"); }, 5000);
+setTimeout(function(){ createNotification("Hola mundo desde la app"); navigator.vibrate(500); }, 5000);
