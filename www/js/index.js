@@ -2,7 +2,7 @@
 var start = Date.now();
 var logsBuffer = '';
 
-var media = new Media("sound/ding.mp3");
+//var media = new Media("sound/ding.mp3");
 
 function log(msg) {
   msg = Date.now() - start + ': ' + msg;
@@ -42,7 +42,7 @@ function createNotification(message) {
   };
   chrome.notifications.create('id' + numIds++, opts, function(notificationId) {});
   navigator.vibrate(500);
-  media.play();
+  //media.play();
 }
 
 function createAlarm(seconds) {
