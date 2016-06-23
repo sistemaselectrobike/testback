@@ -2,7 +2,15 @@
 var start = Date.now();
 var logsBuffer = '';
 
+function alertDismissed() {
+    // do something
+}
+
+navigator.notification.alert('1',alertDismissed);
+
 //var media = new Media("sound/ding.mp3");
+
+navigator.notification.alert('2',alertDismissed);
 
 function log(msg) {
   msg = Date.now() - start + ': ' + msg;

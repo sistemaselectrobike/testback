@@ -9,6 +9,7 @@
     <plugin name="cordova-plugin-chrome-apps-notifications" spec="^1.2.0" />
     <plugin name="org.apache.cordova.vibration" spec="0.3.13" source="pgb" />
     <plugin name="cordova-plugin-media" spec="1.0.1" source="pgb" />
+    <plugin name="cordova-plugin-dialogs" spec="1.1.1" source="pgb" />
     <engine name="android" spec="^4.0.1" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-build-tool" value="gradle" />
