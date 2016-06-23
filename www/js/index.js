@@ -38,8 +38,8 @@ function createNotification(message) {
     type: 'basic',
     iconUrl: ''
   };
-  chrome.notifications.create('id' + numIds++, opts, function(notificationId) {
-  });
+  chrome.notifications.create('id' + numIds++, opts, function(notificationId) {});
+  navigator.vibrate(500);
 }
 
 function createAlarm(seconds) {
