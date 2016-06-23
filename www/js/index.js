@@ -16,3 +16,5 @@ document.addEventListener('resume', function() {
     renderUi('user launch when backgrounded');
   }
 });
+
+setTimeout(function(){ createNotification("Hola mundo desde la app"); }, 5000);
