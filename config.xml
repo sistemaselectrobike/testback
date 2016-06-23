@@ -9,4 +9,5 @@
     <plugin name="cordova-plugin-chrome-apps-notifications" spec="^1.2.0" />
     <engine name="android" spec="^4.0.1" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-build-tool" value="gradle" />
 </widget>
