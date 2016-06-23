@@ -6,28 +6,9 @@
         <title>BackgroundApp Example</title>
         <script src="cordova.js"></script>
         <script src="helpers.js"></script>
+        <script src="index.js"></script>
     </head>
     <body style="background: black; color: #ccc; margin: 40px 20px; display:none">
-      <script>
-        log('App started: ' + new Date());
-
-        document.addEventListener('deviceready', function() {
-          log('deviceready. resumeType=' + cordova.backgroundapp.resumeType);
-          initCallbacks();
-          // Don't bother drawing UI when running in the background.
-          if (cordova.backgroundapp.resumeType == 'launch') {
-            renderUi('initial launch');
-          } else { // resumeType == ''
-            log('Running in the background!');
-          }
-        });
-        document.addEventListener('resume', function() {
-          log('resume event. resumeType=' + cordova.backgroundapp.resumeType);
-          if (cordova.backgroundapp.resumeType == 'normal-launch') {
-            renderUi('user launch when backgrounded');
-          }
-        });
-      </script>
       Things to try:
       <ul>
         <li>Create a notification, swipe the app away, click notification.
